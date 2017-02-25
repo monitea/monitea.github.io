@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Scrum] Good standup"
+title: "[Scrum] Better standup"
 date: 2017-02-25
 categories: Scrum
 ---
