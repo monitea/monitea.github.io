@@ -6,7 +6,7 @@ categories: Scrum
 ---
 
 I recently started scrum mastering for a newly built team.
-Several initial stand ups were held according to "what I did - what I plan to do - what blocks me".
+Several initial standups were held according to "what I did - what I plan to do - what blocks me".
 And you know what?
 Those standups sucked.
 
