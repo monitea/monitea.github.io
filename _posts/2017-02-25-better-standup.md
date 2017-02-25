@@ -13,7 +13,7 @@ Those standups sucked.
 I did not have any sense of where we are with the sprint, I could not tell if we were on the right track...
 
 I proposed a change of approach. 
-I suggested we hold our standup constantly looking at our srint dashboard and focus not people, but on actual stories within the sprint.
+I suggested we hold our standup constantly looking at our sprint dashboard and focus not on people, but on actual stories within the sprint.
 
 For me, this approach felt much better.
 We'll see what the team says on the retrospective...
