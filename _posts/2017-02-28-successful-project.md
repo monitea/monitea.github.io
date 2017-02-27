@@ -4,6 +4,7 @@ title: "Successful project"
 date: 2017-02-28
 categories: Productivity
 ---
+
 What does it mean that project is successful?
 Let's say that we delivered on time, on budget and per specifications.
 Our code was perfect. Readable, testable, self-documenting.
