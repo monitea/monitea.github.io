@@ -20,7 +20,7 @@ Let's start!
 # 1. Don't give your education information!
 
 Especially for students:
-Let's play hide and seek with the recruiter and test their glass ball!
+Let's play hide and seek with the recruiter and test their scrying ball!
 Never, ever disclose any educational information about yourself.
 If you do, make sure for it to be irrelevant and incomplete.
 Secrecy first!
