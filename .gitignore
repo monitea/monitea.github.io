@@ -1,2 +1,9 @@
 _site/
 node_modules/
+npm-debug.log
+log/*.log
+tmp/**
+node_modules/
+.sass-cache
+css/reveal.min.css
+js/reveal.min.js
