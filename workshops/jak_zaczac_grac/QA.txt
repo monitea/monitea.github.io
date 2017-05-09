@@ -1,0 +1,22 @@
+___________________
+
+Stanowisko: Tester
+
+Jego sposób działania:
+Dociekliwy. Zadaje trudne pytania.
+
+
+Cechy:
+Fizyczne: -1 	
+Społeczne: 1	
+Naukowo-techniczne: 0
+
+Impulsy:
+
+Nie ma softu bez błędów: Może i to najlepszy kod, ale ZAWSZE znajdzie się jeszcze jeden błąd.
+
+
+Umiejętności:
+
+Znajdź dziurę w całym:
+Przekonaj, że to naprawdę błąd:
