@@ -7,14 +7,17 @@ Jego sposób działania:
 
 
 Cechy:
-Fizyczne:  1 	
-Społeczne: 0	
-Naukowo-techniczne: -1
+Fizyczne:  1 	Ktoś w tej firmie musi poruszać się sprawniej od kulawego dziadka... Serio, firma pełna młodych ludzi, którzy dostają zadyszki po wejściu na półpiętro...
+Społeczne: 0	Lubi sobie pogadać, łatwo się zaprzyjaźnia.
+Naukowo-techniczne: -1 To nie jego działka
 
 
 Impulsy:
 
+Nie jestem Twoim służącym!
 
 
 Umiejętności:
+
+Zidentyfikuj rozrabiakę:
 

@@ -10,12 +10,15 @@ Proaktywność, proaktywność, proaktywność!
 Niech Cię widzą, niech o Tobie słyszą, niech wiedzą, że jesteś KIMŚ!
 
 Cechy:
-Fizyczne:  0	
+Fizyczne:  0	Ani super źle ani super dobrze.
 Społeczne: 1	Kto jak kto, ale on musi!
 Naukowo-techniczne: -1	Po co to komu? Nie muszę znać szczegółów, żeby móc to sprzedać, cokolwiek to jest!
 
 Impulsy:
-Pokazać się
+Awansować.
+Sprzedać jak najwięcej.
+Zadowolenie klienta (opcjonalny)
+
 
 
 Umiejętności:

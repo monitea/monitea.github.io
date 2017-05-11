@@ -2,21 +2,26 @@ ___________________
 
 Stanowisko: Tester
 
+Niezrozumiany. Na jego widok programiści odwracają wzrok a szefowie zaciskają zęby.
+Posłaniec przynoszący złe wieści...
+Ale czy na pewno?
+Są i tacy, którzy rozumieją, że swoją ciężką pracą chroni kolegów przed skutkami błędów, które na szczęście nie wyszły na świat.
+
 Jego sposób działania:
 Dociekliwy. Zadaje trudne pytania.
 
 
 Cechy:
-Fizyczne: -1 	
-Społeczne: 1	
-Naukowo-techniczne: 0
+Fizyczne: -1 	Od rana do nocy wpatruje się w ekran, ćwicząc mózg i zapominając o ciele...
+Społeczne: 1	Jak to zrobić, żeby kolega mnie nie znienawidził za znalezienie kolejnego błędu a szef nie obwinił za opóźnienia...?
+Naukowo-techniczne: 0	Absolutnie nie dorównuje programiście w kwestiach technicznych, ale wbrew pozorom rozumie całkiem sporo.
 
 Impulsy:
 
 Nie ma softu bez błędów: Może i to najlepszy kod, ale ZAWSZE znajdzie się jeszcze jeden błąd.
-
+Udowodnić, że tester nie jest gorszy od innych
 
 Umiejętności:
 
-Znajdź dziurę w całym:
-Przekonaj, że to naprawdę błąd:
+Znajdź dziurę w całym: To największy i najtraszliwszy dar testera. Programiści mówią, że testerzy psują ich programy, ale testerzy wiedzą, że one już były zepsute... Umiejętność ma zastosowanie nie tylko do oprogramowania.
+Sprzedaj zgniłka: Trochę umiejętności negocjacji, trochę umiejętności argumentacji... Przekonaj kolegę, że to naprawdę błąd a szefa, że warto go poprawić... Bądź jak sprzedawca nadgniłych jabłek, do którego klienci wracają po więcej.

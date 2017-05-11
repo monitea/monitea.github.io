@@ -2,17 +2,24 @@ ___________________
 
 Stanowisko: Prawnik
 
+Każda korporacja wystawiona jest na atak sępów. 
+Prawnik to pierwsza i ostatnia linia obrony przed trollami patentowymi.
+
 Jego sposób działania:
 
+Powoli, ostrożnie, analizy zagadnień prawniczych nie da się przyspieszyć... Masz pojęcie ile ustaw musimy przejrzeć?!
 
 Cechy:
 Fizyczne:  -1
-Społeczne:  1	
-Naukowo-techniczne: 0
+Społeczne:  0	
+Naukowo-techniczne: 1
 
 
 Impulsy:
 
+Oszukać oszustów.
 
 Umiejętności:
-
+Znajdź prawny kruczek:
+Prawnicza gadka:
+Zamotaj umowę:

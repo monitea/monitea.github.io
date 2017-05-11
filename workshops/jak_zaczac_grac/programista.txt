@@ -8,16 +8,18 @@ Lubi konkrety.
 
 
 Cechy:
-Fizyczne: -1 	
-Społeczne: -1	
-Naukowo-techniczne: 1	
+Fizyczne: -1	Komputer w pracy, komputer w zabawie... biegam najwyżej na autobus! 	
+Społeczne: 0	Wbrew pozorom nie jesteśmy bandą aspołecznych typów... Po prostu "normalni" ludzie nas nie rozumieją
+Naukowo-techniczne: 1	O, tak, słonko! Daj mi się tym pobawić!
 
 
 Impulsy:
 
 To MÓJ kod i będzie najlepszy! Dopieszczę każdy jego szczegół!
 
+
 Umiejętności:
 
-Koduj:
+Programuj: Programista żyje po to, żeby rozwiązywać realne problemy przy użyciu programów. Po to całe życie się uczył. To jego domena i jego żywioł.
+Absolutna koncentracja: Gdy programista wpadnie w "ciąg", jest w swoim żywiole. Kod programu pojawia się w niemal nadprzyrodzony spsób. Koncentracja wyostrza percepcję w temacie, nad którym programista pracuje, całkowicie odcinając niezwiązane z tematem bodźce.
 Techno-gadka: To straszliwe narzędzie zniszczenia wykorzystuje umiejętności techniczne zamiast społecznych. Można albo próbować to zrozumieć (test techniczny) albo przestać słuchać (test społeczny)
