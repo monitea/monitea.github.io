@@ -1,0 +1,258 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>Skąd wiesz, że Twoje testy są dobre?</title>
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides" data-charset="iso-8859-2">
+				<section data-markdown>
+					# Skąd wiesz, że Twoje testy są dobre?
+					Monika Januszek
+				</section>
+				<section>
+					<section data-markdown>
+						## Był sobie zespół...
+					</section>
+					<section data-markdown>
+						* Odziedziczony moduł
+						* Bardzo mało testów
+						* Zadanie: Utrzymanie
+						* Dopisane testy: <10
+					</section>
+				</section>
+				<section>
+					<section data-markdown data-background="img/1wfta2.jpg">
+					</section>
+					<section data-markdown>
+						* Znalezienie błędów
+						* Potwierdzenie sprawności
+						* Poznanie systemu
+						* Określenie charakterystyki systemu
+					</section>
+					<section data-markdown>
+						## To zależy
+						* Produkt czy projekt?
+						* Skończony czy rozwojowy?
+						* Faza → Poziom testów
+						* Poziom dojrzałości zespołu
+						</section >	
+				</section>
+				<section>
+					<section data-markdown>
+						## Był sobie projekt...
+					</section>
+					<section data-markdown>
+						* Dużo testów
+						* Spora funkcjonalność
+						* Nowi programiści nic nie rozumieli
+						* Strach przed zmianą „bo wybuchnie”
+						* Ogromny koszt wdrożenia i rozbudowy
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						## Wartość testów
+					</section>
+					<section data-markdown>
+						* Zawsze zielony 
+						* Zawsze czerwony
+						* "Mamy 100 000 testów"
+						* "Puściłem testy, idę na obiad"
+					</section>
+					<section data-markdown>
+						* Assertitis
+						* "Tak, mam 100%, pokryłem ten setter!"
+						* Przewodnik po kodzie
+						* Wskaźnik jak trudno użyć kodu
+						* "Tak, przetestuję przycinanie obrazka do awatara!"
+						...w aplikacji bankowej
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						## Metryki jakości						
+					</section>
+					<section data-markdown>
+						* Ilość testów na wymaganie (biznesowe)
+						* Ilość testów wymagających napisania
+						* Ilość testów wykonanych (sukces / porażka)
+						* Ilość błędów, które wydostały się na produkcję w jednostce czasu		
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						## Metryki jakości... testów
+					</section>
+					<section data-markdown>
+						* Jak bardzo boisz się zmienić kod?
+						* Poziom pewności "tak" zespołu
+						* Zawsze czerwone testy?
+						* „A, tak, to normalne” na godzinę
+						* Jak częste są "losowe" faile?
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						## Był sobie zespół...
+					</section>
+					<section data-markdown>
+						* "Będziemy mieć 100% pokrycia!"
+						* I mieli…
+						* HTTP 500 podczas próby logowania.
+					</section>
+				</section>
+				<section>
+					<section data-markdown data-background="img/wrote-1000-lines.jpg" data-background-size="50%">
+					</section>
+					<section data-markdown data-background="img/itsatrap.jpg" data-background-size="50%">
+					</section>					
+					<section data-markdown>
+						### % pokrycia… czego?
+						* Linii kodu?
+						* Warunków?
+						* Funkcji?
+						* Stanów?
+						* Rozgałęzień?
+					</section>
+					<section data-markdown>
+						~~~~ 
+						if (a || b)
+						doThings();
+						doOtherThings();
+						~~~~
+					</section>
+					<section data-markdown>
+						### 100% pokrycia - czy warto?
+						* Gettery / settery / glue code
+						* Biblioteki
+						* Wysiłek do zysku
+						* „Zabetonowany” kod
+						* 100% pokrycia testami wydajnościowymi?
+					</section>
+					<section >
+						<h3> A może jednak?</h3>
+						Wymagania biznesowe
+						<table border="1">
+						<tr>
+							<td>		  </td>
+							<td>Test1</td>
+							<td>Test2</td>
+							<td>Test3</td>
+							<td>Test4</td>
+						</tr>
+						<tr>
+							<td>Wymaganie1</td>
+							<td>x	</td>
+							<td>x	</td>
+							<td>x	</td>
+							<td>	 </td>
+						</tr>
+						<tr>
+							<td>Wymaganie2</td>
+							<td>	 </td>
+							<td>x	</td>
+							<td>	 </td>
+							<td>	 </td>
+						</tr>
+						<tr>
+							<td>Wymaganie3</td>
+							<td>x	</td>
+							<td>x	</td>
+							<td>x	</td>
+							<td>x	</td>
+						</tr>
+						<tr>
+							<td>Wymaganie4</td>
+							<td>x	</td>
+							<td>x	</td>
+							<td>	 </td>
+							<td>	 </td>
+						</tr>
+						<tr>
+							<td>Wymaganie5</td>
+							<td>	 </td>
+							<td>	 </td>
+							<td>	 </td>
+							<td>	 </td>
+						</tr>
+						</table>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						## Był sobie programista...
+					</section>
+					<section data-markdown>
+						* Tak! Rozumiem to wszystko!
+						* Napiszę świetne testy!
+					</section>
+					<section data-markdown data-background="img/kod.png">
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						## Cechy dobrego testu
+					</section>
+					<section data-markdown>
+						* Czytelność
+						* Wąski zakres odpowiedzialności 
+						* Given - when - then
+					</section>
+				</section>
+				<section>
+					<section data-markdown data-background="img/1wft2r.jpg" data-background-size="70%">
+					</section>
+					<section data-markdown>
+						## Techniki projektowania
+						* Klasy równoważności
+						* Warunki brzegowe
+					</section>
+					<section data-markdown>
+						## Klasy równoważności
+						![alt](img/Equivalence-Partitioning-1.png)						
+					</section>
+					<section data-markdown>
+						## ...A tak naprawdę?
+						* Dane, przy pobieraniu których wystąpił błąd
+						* Czarno-białe zdjęcia
+					</section>
+					<section data-markdown>
+						## Jak rozpoznać?
+						> No jak z tym działa, to i z tamtym będzie...
+					</section>					
+				</section>				
+			</div>
+		</div>
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+			
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
