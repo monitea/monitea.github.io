@@ -31,37 +31,32 @@
 					<section data-markdown>
 						* Odziedziczony moduł
 						* Bardzo mało testów
-						* Zadanie: Utrzymanie
-						* Dopisane testy: <10
+						* Zadanie: **utrzymanie**
 					</section>
 				</section>
 				<section>
 					<section data-markdown data-background="img/1wfta2.jpg">
 					</section>
 					<section data-markdown>
+						## Cel
+					</section>
+					<section data-markdown>
 						* Znalezienie błędów
 						* Potwierdzenie sprawności
 						* Poznanie systemu
 						* Określenie charakterystyki systemu
+						* Ograniczenie ryzyka
 					</section>
 					<section data-markdown>
 						## To zależy
-						* Produkt czy projekt?
-						* Skończony czy rozwojowy?
-						* Faza → Poziom testów
-						* Poziom dojrzałości zespołu
-						</section >	
-				</section>
-				<section>
-					<section data-markdown>
-						## Był sobie projekt...
 					</section>
 					<section data-markdown>
-						* Dużo testów
-						* Spora funkcjonalność
-						* Nowi programiści nic nie rozumieli
-						* Strach przed zmianą „bo wybuchnie”
-						* Ogromny koszt wdrożenia i rozbudowy
+						* Produkt czy projekt?
+						* Skończony czy rozwojowy?
+						* Jak bardzo ryzykowny?
+						* Faza → Poziom testów
+					</section>
+					<section data-markdown data-background="img/Agile-Testing-Quadrants.png" data-background-size="50%">
 					</section>
 				</section>
 				<section>
@@ -77,15 +72,15 @@
 					<section data-markdown>
 						* Assertitis
 						* "Tak, mam 100%, pokryłem ten setter!"
-						* Przewodnik po kodzie
-						* Wskaźnik jak trudno użyć kodu
 						* "Tak, przetestuję przycinanie obrazka do awatara!"
 						...w aplikacji bankowej
+						* Przewodnik po kodzie
+						* Wskaźnik jak trudno użyć kodu
 					</section>
 				</section>
 				<section>
 					<section data-markdown>
-						## Metryki jakości						
+						## Metryki jakości produktu			
 					</section>
 					<section data-markdown>
 						* Ilość testów na wymaganie (biznesowe)
@@ -96,7 +91,7 @@
 				</section>
 				<section>
 					<section data-markdown>
-						## Metryki jakości... testów
+						## Metryki jakości testów
 					</section>
 					<section data-markdown>
 						* Jak bardzo boisz się zmienić kod?
@@ -111,7 +106,9 @@
 						## Był sobie zespół...
 					</section>
 					<section data-markdown>
-						* "Będziemy mieć 100% pokrycia!"
+						# "Będziemy mieć 100% pokrycia!"
+					</section>
+					<section data-markdown>
 						* I mieli…
 						* HTTP 500 podczas próby logowania.
 					</section>
@@ -137,6 +134,13 @@
 						~~~~
 					</section>
 					<section data-markdown>
+						~~~~ 
+						if (a || b || c)
+						doThings();
+						doOtherThings();
+						~~~~
+					</section>
+					<section data-markdown>
 						### 100% pokrycia - czy warto?
 						* Gettery / settery / glue code
 						* Biblioteki
@@ -144,47 +148,51 @@
 						* „Zabetonowany” kod
 						* 100% pokrycia testami wydajnościowymi?
 					</section>
+					<section data-markdown>
+						###  A może jednak?
+					</section>
+					<section data-markdown data-background="img/coverage.jpg" data-background-size="100%">
+					</section>	
 					<section >
-						<h3> A może jednak?</h3>
-						Wymagania biznesowe
+						<h4>Wymagania biznesowe</h4>
 						<table border="1">
 						<tr>
 							<td>		  </td>
-							<td>Test1</td>
-							<td>Test2</td>
-							<td>Test3</td>
-							<td>Test4</td>
+							<td>Test 1</td>
+							<td>Test 2</td>
+							<td>Test 3</td>
+							<td>Test 4</td>
 						</tr>
 						<tr>
-							<td>Wymaganie1</td>
+							<td>Wymaganie 1</td>
 							<td>x	</td>
 							<td>x	</td>
 							<td>x	</td>
 							<td>	 </td>
 						</tr>
 						<tr>
-							<td>Wymaganie2</td>
+							<td>Wymaganie 2</td>
 							<td>	 </td>
-							<td>x	</td>
-							<td>	 </td>
-							<td>	 </td>
-						</tr>
-						<tr>
-							<td>Wymaganie3</td>
-							<td>x	</td>
-							<td>x	</td>
-							<td>x	</td>
-							<td>x	</td>
-						</tr>
-						<tr>
-							<td>Wymaganie4</td>
-							<td>x	</td>
 							<td>x	</td>
 							<td>	 </td>
 							<td>	 </td>
 						</tr>
 						<tr>
-							<td>Wymaganie5</td>
+							<td>Wymaganie 3</td>
+							<td>x	</td>
+							<td>x	</td>
+							<td>x	</td>
+							<td>x	</td>
+						</tr>
+						<tr>
+							<td>Wymaganie 4</td>
+							<td>x	</td>
+							<td>x	</td>
+							<td>	 </td>
+							<td>	 </td>
+						</tr>
+						<tr>
+							<td>Wymaganie 5</td>
 							<td>	 </td>
 							<td>	 </td>
 							<td>	 </td>
@@ -201,7 +209,9 @@
 						* Tak! Rozumiem to wszystko!
 						* Napiszę świetne testy!
 					</section>
-					<section data-markdown data-background="img/kod.png">
+					<section data-markdown data-background="img/kod.png" data-background-size="60%">
+					</section>
+					<section data-markdown data-background="img/kod-problemy.png" data-background-size="60%">
 					</section>
 				</section>
 				<section>
@@ -210,6 +220,7 @@
 					</section>
 					<section data-markdown>
 						* Czytelność
+						* Poprawność
 						* Wąski zakres odpowiedzialności 
 						* Given - when - then
 					</section>
@@ -219,12 +230,32 @@
 					</section>
 					<section data-markdown>
 						## Techniki projektowania
-						* Klasy równoważności
 						* Warunki brzegowe
+						* Klasy równoważności
+					</section>
+					<section data-markdown>
+						## Warunki brzegowe
+						![alt](img/boundary-values.png)
+					</section>
+					<section data-markdown>
+						## ...A tak naprawdę?
+						* Obszary o wysokim kontraście na obrazie
+						* 66-letni mężczyzna (emerytura)
+					</section>
+					<section data-markdown>
+						## Jak rozpoznać?
+						![alt](img/Mufasa-showing-Simba-the-kingdom-in-The-Lion-King.jpg)
+					</section>
+					<section data-markdown>
+						## Wróćmy do mężczyzny
+						* 66 lat
+						 * jeszcze nie na emeryturze bo wciąż pracuje
+						 * już na emeryturze bo >65 lat
+						 * jeszcze nie na emeryturze bo <67
 					</section>
 					<section data-markdown>
 						## Klasy równoważności
-						![alt](img/Equivalence-Partitioning-1.png)						
+						![alt](img/Equivalence-Partitioning-1.png)
 					</section>
 					<section data-markdown>
 						## ...A tak naprawdę?
@@ -233,9 +264,34 @@
 					</section>
 					<section data-markdown>
 						## Jak rozpoznać?
-						> No jak z tym działa, to i z tamtym będzie...
-					</section>					
-				</section>				
+						![alt](img/a67ZNnL_700b.jpg)
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						## Co jeszcze możesz zrobić?
+					</section>
+					<section data-markdown>
+						* Analiza ryzyka
+						* Przeglądy wymagań
+						* Przeglądy kodu (również testów)
+						* Narzędzia analizy automatycznej
+					</section>
+					<section data-markdown>
+						## Dobre praktyki
+					</section>
+					<section data-markdown>
+						* Nie przesłaniaj błędów
+						* Skup się na czytelności 
+						* Utrzymuj małe zakresy odpowiedzialności
+						* Stosuj strukturę "Given-When-Then"
+						* Korzystaj z bibliotek
+						* Assert vs. Assume
+					</section>
+				</section>
+				<section data-markdown>
+					# Dziękuję za uwagę
+				</section>
 			</div>
 		</div>
 		<script src="lib/js/head.min.js"></script>
