@@ -1,0 +1,314 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>Skąd wiesz, że Twoje testy są dobre?</title>
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides" data-charset="iso-8859-2">
+				<section data-markdown>
+					# Skąd wiesz, że Twoje testy są dobre?
+					Monika Januszek
+				</section>
+				<section>
+					<section data-markdown>
+						## Był sobie zespół...
+					</section>
+					<section data-markdown>
+						* Odziedziczony moduł
+						* Bardzo mało testów
+						* Zadanie: **utrzymanie**
+					</section>
+				</section>
+				<section>
+					<section data-markdown data-background="img/1wfta2.jpg">
+					</section>
+					<section data-markdown>
+						## Cel
+					</section>
+					<section data-markdown>
+						* Znalezienie błędów
+						* Potwierdzenie sprawności
+						* Poznanie systemu
+						* Określenie charakterystyki systemu
+						* Ograniczenie ryzyka
+					</section>
+					<section data-markdown>
+						## To zależy
+					</section>
+					<section data-markdown>
+						* Produkt czy projekt?
+						* Skończony czy rozwojowy?
+						* Jak bardzo ryzykowny?
+						* Faza → Poziom testów
+					</section>
+					<section data-markdown data-background="img/Agile-Testing-Quadrants.png" data-background-size="50%">
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						## Wartość testów
+					</section>
+					<section data-markdown>
+						* Zawsze zielony 
+						* Zawsze czerwony
+						* "Mamy 100 000 testów"
+						* "Puściłem testy, idę na obiad"
+					</section>
+					<section data-markdown>
+						* Assertitis
+						* "Tak, mam 100%, pokryłem ten setter!"
+						* "Tak, przetestuję przycinanie obrazka do awatara!"
+						...w aplikacji bankowej
+						* Przewodnik po kodzie
+						* Wskaźnik jak trudno użyć kodu
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						## Metryki jakości produktu			
+					</section>
+					<section data-markdown>
+						* Ilość testów na wymaganie (biznesowe)
+						* Ilość testów wymagających napisania
+						* Ilość testów wykonanych (sukces / porażka)
+						* Ilość błędów, które wydostały się na produkcję w jednostce czasu		
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						## Metryki jakości testów
+					</section>
+					<section data-markdown>
+						* Jak bardzo boisz się zmienić kod?
+						* Poziom pewności "tak" zespołu
+						* Zawsze czerwone testy?
+						* „A, tak, to normalne” na godzinę
+						* Jak częste są "losowe" faile?
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						## Był sobie zespół...
+					</section>
+					<section data-markdown>
+						# "Będziemy mieć 100% pokrycia!"
+					</section>
+					<section data-markdown>
+						* I mieli…
+						* HTTP 500 podczas próby logowania.
+					</section>
+				</section>
+				<section>
+					<section data-markdown data-background="img/wrote-1000-lines.jpg" data-background-size="50%">
+					</section>
+					<section data-markdown data-background="img/itsatrap.jpg" data-background-size="50%">
+					</section>					
+					<section data-markdown>
+						### % pokrycia… czego?
+						* Linii kodu?
+						* Warunków?
+						* Funkcji?
+						* Stanów?
+						* Rozgałęzień?
+					</section>
+					<section data-markdown>
+						~~~~ 
+						if (a || b)
+						doThings();
+						doOtherThings();
+						~~~~
+					</section>
+					<section data-markdown>
+						~~~~ 
+						if (a || b || c)
+						doThings();
+						doOtherThings();
+						~~~~
+					</section>
+					<section data-markdown>
+						### 100% pokrycia - czy warto?
+						* Gettery / settery / glue code
+						* Biblioteki
+						* Wysiłek do zysku
+						* „Zabetonowany” kod
+						* 100% pokrycia testami wydajnościowymi?
+					</section>
+					<section data-markdown>
+						###  A może jednak?
+					</section>
+					<section data-markdown data-background="img/coverage.jpg" data-background-size="100%">
+					</section>	
+					<section >
+						<h4>Wymagania biznesowe</h4>
+						<table border="1">
+						<tr>
+							<td>		  </td>
+							<td>Test 1</td>
+							<td>Test 2</td>
+							<td>Test 3</td>
+							<td>Test 4</td>
+						</tr>
+						<tr>
+							<td>Wymaganie 1</td>
+							<td>x	</td>
+							<td>x	</td>
+							<td>x	</td>
+							<td>	 </td>
+						</tr>
+						<tr>
+							<td>Wymaganie 2</td>
+							<td>	 </td>
+							<td>x	</td>
+							<td>	 </td>
+							<td>	 </td>
+						</tr>
+						<tr>
+							<td>Wymaganie 3</td>
+							<td>x	</td>
+							<td>x	</td>
+							<td>x	</td>
+							<td>x	</td>
+						</tr>
+						<tr>
+							<td>Wymaganie 4</td>
+							<td>x	</td>
+							<td>x	</td>
+							<td>	 </td>
+							<td>	 </td>
+						</tr>
+						<tr>
+							<td>Wymaganie 5</td>
+							<td>	 </td>
+							<td>	 </td>
+							<td>	 </td>
+							<td>	 </td>
+						</tr>
+						</table>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						## Był sobie programista...
+					</section>
+					<section data-markdown>
+						* Tak! Rozumiem to wszystko!
+						* Napiszę świetne testy!
+					</section>
+					<section data-markdown data-background="img/kod.png" data-background-size="60%">
+					</section>
+					<section data-markdown data-background="img/kod-problemy.png" data-background-size="60%">
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						## Cechy dobrego testu
+					</section>
+					<section data-markdown>
+						* Czytelność
+						* Poprawność
+						* Wąski zakres odpowiedzialności 
+						* Given - when - then
+					</section>
+				</section>
+				<section>
+					<section data-markdown data-background="img/1wft2r.jpg" data-background-size="70%">
+					</section>
+					<section data-markdown>
+						## Techniki projektowania
+						* Warunki brzegowe
+						* Klasy równoważności
+					</section>
+					<section data-markdown>
+						## Warunki brzegowe
+						![alt](img/boundary-values.png)
+					</section>
+					<section data-markdown>
+						## ...A tak naprawdę?
+						* Obszary o wysokim kontraście na obrazie
+						* 66-letni mężczyzna (emerytura)
+					</section>
+					<section data-markdown>
+						## Jak rozpoznać?
+						![alt](img/Mufasa-showing-Simba-the-kingdom-in-The-Lion-King.jpg)
+					</section>
+					<section data-markdown>
+						## Wróćmy do mężczyzny
+						* 66 lat
+						 * jeszcze nie na emeryturze bo wciąż pracuje
+						 * już na emeryturze bo >65 lat
+						 * jeszcze nie na emeryturze bo <67
+					</section>
+					<section data-markdown>
+						## Klasy równoważności
+						![alt](img/Equivalence-Partitioning-1.png)
+					</section>
+					<section data-markdown>
+						## ...A tak naprawdę?
+						* Dane, przy pobieraniu których wystąpił błąd
+						* Czarno-białe zdjęcia
+					</section>
+					<section data-markdown>
+						## Jak rozpoznać?
+						![alt](img/a67ZNnL_700b.jpg)
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						## Co jeszcze możesz zrobić?
+					</section>
+					<section data-markdown>
+						* Analiza ryzyka
+						* Przeglądy wymagań
+						* Przeglądy kodu (również testów)
+						* Narzędzia analizy automatycznej
+					</section>
+					<section data-markdown>
+						## Dobre praktyki
+					</section>
+					<section data-markdown>
+						* Nie przesłaniaj błędów
+						* Skup się na czytelności 
+						* Utrzymuj małe zakresy odpowiedzialności
+						* Stosuj strukturę "Given-When-Then"
+						* Korzystaj z bibliotek
+						* Assert vs. Assume
+					</section>
+				</section>
+				<section data-markdown>
+					# Dziękuję za uwagę
+				</section>
+			</div>
+		</div>
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+			
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>

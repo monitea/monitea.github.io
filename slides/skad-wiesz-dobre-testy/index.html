@@ -24,273 +24,399 @@
 					# Skąd wiesz, że Twoje testy są dobre?
 					Monika Januszek
 				</section>
-				<section>
-					<section data-markdown>
-						## Był sobie zespół...
-					</section>
-					<section data-markdown>
-						* Odziedziczony moduł
-						* Bardzo mało testów
-						* Zadanie: **utrzymanie**
-					</section>
+							
+				<section data-markdown>
+					## Jak to skąd?
+					## Przecież je napisałem!
 				</section>
-				<section>
-					<section data-markdown data-background="img/1wfta2.jpg">
-					</section>
-					<section data-markdown>
-						## Cel
-					</section>
-					<section data-markdown>
-						* Znalezienie błędów
-						* Potwierdzenie sprawności
-						* Poznanie systemu
-						* Określenie charakterystyki systemu
-						* Ograniczenie ryzyka
-					</section>
-					<section data-markdown>
-						## To zależy
-					</section>
-					<section data-markdown>
-						* Produkt czy projekt?
-						* Skończony czy rozwojowy?
-						* Jak bardzo ryzykowny?
-						* Faza → Poziom testów
-					</section>
-					<section data-markdown data-background="img/Agile-Testing-Quadrants.png" data-background-size="50%">
-					</section>
+	
+				<section data-markdown>
+					## ROI 
+					zwrot z inwestycji
+				</section>	
+
+				<section data-markdown>
+					* nadmiarowe testy
+					* długi czas wykonania
+					* "zabetonowany" kod
+					* wydłużenie czasu dostarczenia
 				</section>
-				<section>
-					<section data-markdown>
-						## Wartość testów
-					</section>
-					<section data-markdown>
-						* Zawsze zielony 
-						* Zawsze czerwony
-						* "Mamy 100 000 testów"
-						* "Puściłem testy, idę na obiad"
-					</section>
-					<section data-markdown>
-						* Assertitis
-						* "Tak, mam 100%, pokryłem ten setter!"
-						* "Tak, przetestuję przycinanie obrazka do awatara!"
-						...w aplikacji bankowej
-						* Przewodnik po kodzie
-						* Wskaźnik jak trudno użyć kodu
-					</section>
+				
+				<section data-markdown>
+				## Rozwiązanie
+					* usuń nadmiarowe testy
+					* określ zestaw testów krytycznych
+					* ogranicz odpowiedzialności testów
 				</section>
-				<section>
-					<section data-markdown>
-						## Metryki jakości produktu			
-					</section>
-					<section data-markdown>
-						* Ilość testów na wymaganie (biznesowe)
-						* Ilość testów wymagających napisania
-						* Ilość testów wykonanych (sukces / porażka)
-						* Ilość błędów, które wydostały się na produkcję w jednostce czasu		
-					</section>
-				</section>
-				<section>
-					<section data-markdown>
-						## Metryki jakości testów
-					</section>
-					<section data-markdown>
-						* Jak bardzo boisz się zmienić kod?
-						* Poziom pewności "tak" zespołu
-						* Zawsze czerwone testy?
-						* „A, tak, to normalne” na godzinę
-						* Jak częste są "losowe" faile?
-					</section>
-				</section>
-				<section>
-					<section data-markdown>
-						## Był sobie zespół...
-					</section>
-					<section data-markdown>
-						# "Będziemy mieć 100% pokrycia!"
-					</section>
-					<section data-markdown>
-						* I mieli…
-						* HTTP 500 podczas próby logowania.
-					</section>
-				</section>
-				<section>
-					<section data-markdown data-background="img/wrote-1000-lines.jpg" data-background-size="50%">
-					</section>
-					<section data-markdown data-background="img/itsatrap.jpg" data-background-size="50%">
-					</section>					
-					<section data-markdown>
-						### % pokrycia… czego?
-						* Linii kodu?
-						* Warunków?
-						* Funkcji?
-						* Stanów?
-						* Rozgałęzień?
-					</section>
-					<section data-markdown>
-						~~~~ 
-						if (a || b)
-						doThings();
-						doOtherThings();
-						~~~~
-					</section>
-					<section data-markdown>
-						~~~~ 
-						if (a || b || c)
-						doThings();
-						doOtherThings();
-						~~~~
-					</section>
-					<section data-markdown>
-						### 100% pokrycia - czy warto?
-						* Gettery / settery / glue code
-						* Biblioteki
-						* Wysiłek do zysku
-						* „Zabetonowany” kod
-						* 100% pokrycia testami wydajnościowymi?
-					</section>
-					<section data-markdown>
-						###  A może jednak?
-					</section>
-					<section data-markdown data-background="img/coverage.jpg" data-background-size="100%">
-					</section>	
-					<section >
-						<h4>Wymagania biznesowe</h4>
-						<table border="1">
-						<tr>
-							<td>		  </td>
-							<td>Test 1</td>
-							<td>Test 2</td>
-							<td>Test 3</td>
-							<td>Test 4</td>
-						</tr>
-						<tr>
-							<td>Wymaganie 1</td>
-							<td>x	</td>
-							<td>x	</td>
-							<td>x	</td>
-							<td>	 </td>
-						</tr>
-						<tr>
-							<td>Wymaganie 2</td>
-							<td>	 </td>
-							<td>x	</td>
-							<td>	 </td>
-							<td>	 </td>
-						</tr>
-						<tr>
-							<td>Wymaganie 3</td>
-							<td>x	</td>
-							<td>x	</td>
-							<td>x	</td>
-							<td>x	</td>
-						</tr>
-						<tr>
-							<td>Wymaganie 4</td>
-							<td>x	</td>
-							<td>x	</td>
-							<td>	 </td>
-							<td>	 </td>
-						</tr>
-						<tr>
-							<td>Wymaganie 5</td>
-							<td>	 </td>
-							<td>	 </td>
-							<td>	 </td>
-							<td>	 </td>
-						</tr>
-						</table>
-					</section>
-				</section>
-				<section>
-					<section data-markdown>
-						## Był sobie programista...
-					</section>
-					<section data-markdown>
-						* Tak! Rozumiem to wszystko!
-						* Napiszę świetne testy!
-					</section>
-					<section data-markdown data-background="img/kod.png" data-background-size="60%">
-					</section>
-					<section data-markdown data-background="img/kod-problemy.png" data-background-size="60%">
-					</section>
-				</section>
-				<section>
-					<section data-markdown>
-						## Cechy dobrego testu
-					</section>
-					<section data-markdown>
-						* Czytelność
-						* Poprawność
-						* Wąski zakres odpowiedzialności 
-						* Given - when - then
-					</section>
-				</section>
-				<section>
-					<section data-markdown data-background="img/1wft2r.jpg" data-background-size="70%">
-					</section>
-					<section data-markdown>
-						## Techniki projektowania
-						* Warunki brzegowe
-						* Klasy równoważności
-					</section>
-					<section data-markdown>
-						## Warunki brzegowe
-						![alt](img/boundary-values.png)
-					</section>
-					<section data-markdown>
-						## ...A tak naprawdę?
-						* Obszary o wysokim kontraście na obrazie
-						* 66-letni mężczyzna (emerytura)
-					</section>
-					<section data-markdown>
-						## Jak rozpoznać?
-						![alt](img/Mufasa-showing-Simba-the-kingdom-in-The-Lion-King.jpg)
-					</section>
-					<section data-markdown>
-						## Wróćmy do mężczyzny
-						* 66 lat
-						 * jeszcze nie na emeryturze bo wciąż pracuje
-						 * już na emeryturze bo >65 lat
-						 * jeszcze nie na emeryturze bo <67
-					</section>
-					<section data-markdown>
-						## Klasy równoważności
-						![alt](img/Equivalence-Partitioning-1.png)
-					</section>
-					<section data-markdown>
-						## ...A tak naprawdę?
-						* Dane, przy pobieraniu których wystąpił błąd
-						* Czarno-białe zdjęcia
-					</section>
-					<section data-markdown>
-						## Jak rozpoznać?
-						![alt](img/a67ZNnL_700b.jpg)
-					</section>
-				</section>
-				<section>
-					<section data-markdown>
-						## Co jeszcze możesz zrobić?
-					</section>
-					<section data-markdown>
-						* Analiza ryzyka
-						* Przeglądy wymagań
-						* Przeglądy kodu (również testów)
-						* Narzędzia analizy automatycznej
-					</section>
-					<section data-markdown>
-						## Dobre praktyki
-					</section>
-					<section data-markdown>
-						* Nie przesłaniaj błędów
-						* Skup się na czytelności 
-						* Utrzymuj małe zakresy odpowiedzialności
-						* Stosuj strukturę "Given-When-Then"
-						* Korzystaj z bibliotek
-						* Assert vs. Assume
-					</section>
+				
+				<section data-markdown>
+					## Był sobie zespół...
 				</section>
 				<section data-markdown>
+					* Odziedziczony moduł
+					* Bardzo mało testów
+					* Zadanie: **utrzymanie**
+				</section>
+				
+				<section data-markdown data-background="img/1wfta2.jpg"> <!--Klingon-->
+				</section>
+
+				<section data-markdown>
+					## ROI 
+				</section>
+				
+				<section data-markdown>
+					## Cel 
+				</section>
+
+				<section data-markdown>
+					## Nowy projekt
+						a) Testy wydajnościowe
+						b) Testy integracyjne
+						c) Testy jednostkowe
+						d) Testy akceptacyjne
+				</section>
+				
+				<section data-markdown>
+					## Drugi moduł
+						a) Testy akceptacyjne
+						b) Testy wydajnościowe
+						c) Testy jednostkowe
+						d) Testy integracyjne
+				</section>
+
+				<section data-markdown>
+					## Cel - to zależy
+				</section>
+
+				<section data-markdown>
+					* Produkt czy projekt?
+					* Skończony czy rozwojowy?
+					* Jak bardzo ryzykowny?
+					* Faza → Poziom testów
+				</section>
+
+				<section data-markdown>
+					## Jaki test wykonać
+				</section>
+				
+				<section data-markdown>
+					### Cel: 
+					### Sprawdzenie poprawności kodu 
+				</section>
+
+				<section data-markdown>
+					### Rozwiązanie:
+					### Testy wydajnościowe z profilerami
+				</section>
+		
+				<section data-markdown>
+					### Cel: 
+					### Udowodnienie klientowi, że program działa
+				</section>
+
+				<section data-markdown>
+					### Rozwiązanie:
+					### Test udowadniający, że funkcja x zwraca y
+				</section>
+
+				<section data-markdown data-background="img/Umm-Yes-I-Have-A-Question.jpg" data-background-size="60%"> <!--WTF-picard-->
+				<!-- W różnych kontekstach będą różne cele i różne działania  -->
+				
+				</section>
+
+				<section data-markdown>
+					## Dobór testów do potrzeb
+				</section>				
+
+				<section data-markdown>
+					## Weryfikacja vs. Walidacja
+						* Weryfikacja: Czy budujemy produkt właściwie?
+						* Walidacja: Czy budujemy właściwy produkt?
+				</section>		
+				
+				<section data-markdown data-background="img/Agile-Testing-Quadrants.png" data-background-size="50%">
+				</section> <!--Kwadranty-->
+				
+				<section data-markdown data-background="img/Agile-Testing-Quadrants-expanded.png" data-background-size="50%" >
+				</section> <!--Kwadranty-->
+
+				<section data-markdown>
+				## Jak z tego skorzystać?
+					* Czy mamy dość testów? - Nie tak
+					* Czy mamy dość testów danego typu?
+					* Potrzeby: rozwój a utrzymanie
+				</section>
+				<section data-markdown>
+					## Wartość testów
+				</section>
+					
+				<section data-markdown>
+					* Uprząż bezpieczeństwa
+					* Elastyczność
+					* Informacja o stanie produktu
+					* Szybkie wykonanie
+				</section>
+				
+				<section data-markdown>
+					## Typowe problemy
+				</section>				
+				
+				<section data-markdown>
+					* Zawsze zielony 
+					* Zawsze czerwony
+					* "Mamy 100 000 testów"
+					* "Puściłem testy, idę na obiad"
+				</section>
+				<section data-markdown>
+					* "Tak, mam 100%, pokryłem ten setter!"
+					* "Tak, przetestuję przycinanie obrazka do awatara!"
+					...w aplikacji bankowej
+					* Przewodnik po kodzie
+					* Wskaźnik jak trudno użyć kodu
+				</section>
+
+				<section data-markdown>
+					## Metryki jakości testów
+				</section>
+				<section data-markdown>
+					* Jak bardzo boisz się zmienić kod?
+					* Poziom pewności "tak" zespołu
+					* Zawsze czerwone testy?
+					* „A, tak, to normalne” na godzinę
+					* Jak częste są "losowe" faile?
+				</section>
+
+				<section data-markdown>
+					## Był sobie zespół...
+				</section>
+				<section data-markdown>
+					# "Będziemy mieć 100% pokrycia!"
+				</section>
+				<section data-markdown>
+					* I mieli…
+					* HTTP 500 podczas próby logowania.
+				</section>
+
+				<section data-markdown>
+					~~~~ 
+					if (a || b)
+					doThings();
+					doOtherThings();
+					~~~~
+				</section>
+				<section data-markdown>
+					~~~~ 
+					if (a || b || c)
+					doThings();
+					doOtherThings();
+					~~~~
+				</section>		
+				
+				<section data-markdown data-background="img/wrote-1000-lines.jpg" data-background-size="50%">
+				</section>
+				<section data-markdown data-background="img/itsatrap.jpg" data-background-size="50%">
+				</section>					
+
+				<section data-markdown>
+					### 100% pokrycia - czy warto?
+					* Gettery / settery / glue code
+					* Biblioteki
+					* Wysiłek do zysku
+					* „Zabetonowany” kod
+					* 100% pokrycia testami wydajnościowymi?
+				</section>
+				<section data-markdown>
+					###  A może jednak?
+				</section>
+				<section data-markdown data-background="img/coverage.jpg" data-background-size="100%">
+				</section>	
+				<section >
+					<h4>Wymagania biznesowe</h4>
+					<table border="1">
+					<tr>
+						<td>		  </td>
+						<td>Test 1</td>
+						<td>Test 2</td>
+						<td>Test 3</td>
+						<td>Test 4</td>
+					</tr>
+					<tr>
+						<td>Wymaganie 1</td>
+						<td>x	</td>
+						<td>x	</td>
+						<td>x	</td>
+						<td>	 </td>
+					</tr>
+					<tr>
+						<td>Wymaganie 2</td>
+						<td>	 </td>
+						<td>x	</td>
+						<td>	 </td>
+						<td>	 </td>
+					</tr>
+					<tr>
+						<td>Wymaganie 3</td>
+						<td>x	</td>
+						<td>x	</td>
+						<td>x	</td>
+						<td>x	</td>
+					</tr>
+					<tr>
+						<td>Wymaganie 4</td>
+						<td>x	</td>
+						<td>x	</td>
+						<td>	 </td>
+						<td>	 </td>
+					</tr>
+					<tr>
+						<td>Wymaganie 5</td>
+						<td>	 </td>
+						<td>	 </td>
+						<td>	 </td>
+						<td>	 </td>
+					</tr>
+					</table>
+				</section>
+
+				<section data-markdown>
+					## Był sobie programista...
+				</section>
+				<section data-markdown>
+					* Tak! Rozumiem to wszystko!
+					* Napiszę świetne testy!
+				</section>
+				<section data-markdown data-background="img/kod.png" data-background-size="60%">
+				</section>
+				<section data-markdown data-background="img/kod-problemy.png" data-background-size="60%">
+				</section>
+
+				<section data-markdown>
+					## Cechy dobrego testu
+				</section>
+				<section data-markdown>
+					* Czytelność
+					* Wąski zakres odpowiedzialności 
+					* Poprawność
+				</section>
+				
+				<section data-markdown>
+					## Dobre praktyki
+				</section>
+				
+				<section data-markdown>
+					* 1 test = 1 ekran
+					* 1 test = 1 odpowiedzialność
+					* 1 test = 1 sprawdzenie
+				</section>
+				
+				<section data-markdown>
+				~~~~
+				 def test_does_this_work():					
+					assert 1=1
+					
+					
+				 def test_does_that_work():					
+					assert 1=1				
+				~~~~
+				</section>
+
+				<section data-markdown>
+				~~~~
+				 def test_my_actions():	
+					
+					garden = Garden()
+					store = Store()
+					
+					result1 = plant_a_tree()
+					assert(result1.effect == "planted")
+					assert(result1.kind == "oak")
+					
+					result2 = buy_a_chicken()
+					assert(result2 == "bought")
+				~~~~
+				</section>
+				
+				<section data-markdown>
+				~~~~
+				 def test_plant_tree():	
+					# Given
+					garden = Garden()
+					# When
+					result1 = plant_a_tree()
+					# Then
+					assert(result1.effect == "planted")
+					assert(result1.kind == "oak")			
+				def test_buy_chicken_from_store():
+					# Given
+					store = Store()
+					# When
+					result2 = buy_a_chicken()
+					# Then
+					assert(result2 == "bought")
+				~~~~
+				</section>				
+				
+				<section data-markdown>
+					## Sprawdź
+					* Czy testy nie robią za dużo?
+					* Czy testy da się podzielić?
+					* Czy nie są "za wysoko"?
+					* Czy nie testujesz za dużo
+				</section>
+
+				<section data-markdown>
+					## Czy da się w pełni przetestować kalkulator?
+				</section>
+				
+				<section data-markdown>
+					## Techniki projektowania
+					* Warunki brzegowe
+					* Klasy równoważności
+				</section>
+				<section data-markdown>
+					## Warunki brzegowe
+					![alt](img/boundary-values.png)
+				</section>
+				<section data-markdown>
+					## ...A tak naprawdę?
+					* Obszary o wysokim kontraście na obrazie
+					* 66-letni mężczyzna (emerytura)
+				</section>
+				<section data-markdown>
+					## Jak rozpoznać?
+					![alt](img/Mufasa-showing-Simba-the-kingdom-in-The-Lion-King.jpg)
+				</section>
+
+				<section data-markdown>
+					## Klasy równoważności
+					![alt](img/Equivalence-Partitioning-1.png)
+				</section>
+				<section data-markdown>
+					## ...A tak naprawdę?
+					* Dane, przy pobieraniu których wystąpił błąd
+					* Czarno-białe zdjęcia
+				</section>
+				<section data-markdown>
+					## Jak rozpoznać?
+					![alt](img/a67ZNnL_700b.jpg)
+				</section>
+
+				<section data-markdown>
+					## Dobre praktyki
+				</section>
+				<section data-markdown>
+					* Nie przesłaniaj błędów - jedno sprawdzenie na test
+					* Skup się na czytelności - jeden ekran jest idealny
+					* Małe odpowiedzialności - łatwiej test utrzymać
+					* "Given-When-Then" - ułatwia życie
+					* Używaj bibliotek - syndrom "Not invented here" boli
+					* Świadomie uruchamiaj testy - wtedy, gdy mają sens
+				</section>
+
+				<section data-markdown>
 					# Dziękuję za uwagę
+					https://monitea.github.io/slides/skad-wiesz-dobre-testy
 				</section>
 			</div>
 		</div>
