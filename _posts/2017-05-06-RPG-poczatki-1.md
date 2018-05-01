@@ -2,7 +2,7 @@
 layout: post
 title: "Zaczynamy gry fabularne: O odgrywaniu postaci"
 date: 2017-05-06
-categories: RPG, gry fabularne
+categories: RPG gry fabularne
 ---
 
 Stało się. 

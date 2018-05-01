@@ -2,7 +2,7 @@
 layout: post
 title: "10 steps to write a bad CV"
 date: 2017-04-08
-categories: CV, hiring
+categories: CV hiring
 ---
 
 You can find many guides on how to write a good CV. 

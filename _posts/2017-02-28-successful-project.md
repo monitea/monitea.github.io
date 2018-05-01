@@ -2,7 +2,7 @@
 layout: post
 title: "Successful project"
 date: 2017-02-28
-categories: Productivity
+categories: productivity
 ---
 
 What does it mean that project is successful? 

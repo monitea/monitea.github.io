@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Scrum] Standup is not status report"
+title: "Standup is not status report"
 date: 2017-02-18
 categories: Scrum
 ---
